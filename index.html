@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+		table, tb, td {
+		  font-family: arial;
+		  border: 1px solid black;
+		  border-collapse: collapse;
+		  text-align: center;
+		  vertical-align: middle;
+		  table-layout: fixed;
+		}
+		td {
+		  
+		  font-size: 14px;
+		  height: 32px;
+		  width: 80px;
+		}
+		h1 {
+		  font-family: arial;
+		  color: #111111;
+		  font-size: 48px;
+		}
+		h2 {
+		  font-family: arial;
+		  color: #888888;
+		  font-size: 24px;
+		}
+		p {
+		  font-family: arial;
+		  font-size: 14px;
+		}
+	</style>
+	<title>Pollutants Standards Index (PSI)</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body style="text-align:center;" id="body">
+    <h1>Pollutants Standards Index (PSI) Data</h1>
+	<h2 id="retrieval"></h2>
+	<div align="center" class="main" id="main">
+	  <table id="table"></table>
+	  <p></p>
+	  <p style="display: inline; margin-inline: 20px 20px;"><b>Air Quality per PSI Value: </b></p>
+	  <p style="display: inline; margin-inline: 20px 20px; color: #419313;"><b>Good (0-50)</b></p>
+	  <p style="display: inline; margin-inline: 20px 20px; color: #21679A;"><b>Moderate (51-100)</b></p>
+	  <p style="display: inline; margin-inline: 20px 20px; color: #FFD100;"><b>Unhealthy (101-200)</b></p>
+	  <p style="display: inline; margin-inline: 20px 20px; color: #FFA800;"><b>Very Unhealthy (201-300)</b></p>
+	  <p style="display: inline; margin-inline: 20px 20px; color: #D60000;"><b>Hazardous (Above 300)</b></p>
+	  <p><i>For each pollutant, a sub-index is calculated from a segmented linear function that transforms ambient concentrations onto a scale extending from 0 through 500.</i></p>
+	</div>
+	<script type="text/javascript" src="load.js"></script>
+  </body>
+</html>
